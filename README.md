@@ -59,8 +59,8 @@ npm install
 Create a `.env` file in the `backend/` folder:
 
 ```env
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/hostelhub
+PORT=3000
+connectionString= ur connectionString inside mongodb server
 JWT_SECRET=your_jwt_secret_here
 ```
 
@@ -82,7 +82,7 @@ npm install
 Create a `.env` file in the `frontend/` folder:
 
 ```env
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=http://localhost:3000
 ```
 
 Start the frontend:
@@ -112,7 +112,7 @@ There is no automated seed script. To promote a user to admin:
 
 | Variable | Location | Description |
 |---|---|---|
-| `PORT` | backend `.env` | Port for the Express server (default 5000) |
+| `PORT` | backend `.env` | Port for the Express server (default 3000) |
 | `MONGO_URI` | backend `.env` | MongoDB connection string |
 | `JWT_SECRET` | backend `.env` | Secret key for signing JWTs |
 | `VITE_API_URL` | frontend `.env` | Base URL of the backend API |
