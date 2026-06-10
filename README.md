@@ -7,7 +7,7 @@ A full-stack web application for listing, discovering, and managing hostel/PG ac
 ## Features
 
 - **User auth** — register, login, JWT-based sessions
-- **Role-based access** — three roles: `user`, `owner`, `admin`
+- **Role-based access** — three roles: `User`, `Owner`, `Admin`
 - **Property listings** — owners can create listings with multi-image galleries (add, reorder, remove)
 - **Property detail page** — image gallery, embedded map, contact info (gated to logged-in users)
 - **Save / unsave properties** — users can bookmark properties, synced via global context
