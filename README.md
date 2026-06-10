@@ -130,4 +130,4 @@ There is no automated seed script. To promote a user to admin:
 
 ## License
 
-This project was built as an academic submission.
+This project was built as a personal project.
