@@ -1,0 +1,111 @@
+.listings-page {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 32px 0 60px;
+}
+
+/* ── Filter bar ── */
+.lf-bar {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lf-fields {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.lf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+  flex: 1;
+}
+
+.lf-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lf-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #111827;
+  padding: 4px 0;
+  background: transparent;
+  width: 100%;
+}
+.lf-input::placeholder { color: #d1d5db; }
+.lf-input::-webkit-inner-spin-button { display: none; }
+
+.lf-divider {
+  width: 1px;
+  height: 36px;
+  background: #e5e7eb;
+  margin: 0 16px;
+  flex-shrink: 0;
+}
+
+.lf-reset {
+  background: none;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: all 0.2s;
+  margin-left: 8px;
+}
+.lf-reset:hover { border-color: #2563eb; color: #2563eb; }
+
+.lf-result-count {
+  font-size: 13px;
+  color: #9ca3af;
+  padding-left: 2px;
+}
+
+/* ── States ── */
+.listings-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 80px 0;
+  color: #9ca3af;
+}
+
+.listings-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6b7280;
+}
+.listings-empty-icon { font-size: 52px; margin-bottom: 16px; }
+.listings-empty h4 { color: #374151; font-weight: 700; margin-bottom: 8px; }
+.listings-empty p { font-size: 14px; }
+
+@media (max-width: 640px) {
+  .lf-fields { flex-direction: column; align-items: stretch; }
+  .lf-divider { width: 100%; height: 1px; margin: 4px 0; }
+  .lf-reset { align-self: flex-start; }
+}
